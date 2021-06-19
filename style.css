@@ -10,6 +10,8 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
   /* 以上配合中間位置  */
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -17,4 +19,8 @@ input {
   padding: 10px;
   border: 1px solid orange;
   border-radius: 50px;
+}
+
+#btn {
+  margin: 20px;
 }
