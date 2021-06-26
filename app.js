@@ -10,13 +10,28 @@ btn.addEventListener("click", function (e) {
   const userVal = parseInt(number.value, 10); // 轉成10進位整數
   //   console.log(userVal, randomNumber);
   if (userVal === randomNumber) {
-    alert("Your are right");
+    Swal.fire({
+      title: "Good Job !",
+      text: "Do you want to continue",
+      icon: "success",
+      confirmButtonText: "Cool",
+    });
     return;
   } else if (userVal > randomNumber) {
-    alert("smaller");
+    Swal.fire({
+      title: "Error!",
+      text: "smaller",
+      icon: "error",
+      confirmButtonText: "Cool",
+    });
     return;
   } else {
-    alert("larger");
+    Swal.fire({
+      title: "Error!",
+      text: "bigger",
+      icon: "error",
+      confirmButtonText: "Cool",
+    });
     return;
   }
 });
